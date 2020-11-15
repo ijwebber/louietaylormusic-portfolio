@@ -1,0 +1,36 @@
+.Home { 
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    transition: right 2s;
+    right: 100%;
+}
+
+.music-notes {
+    position: absolute;
+    z-index: -1;
+    height: 80%;
+    top: 10%;
+    left: 2%;
+}
+
+.title {
+    text-align: center;
+    margin-top: 160px;  
+}
+
+.title .logo {
+    width: 196px;
+    height: 196px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.title .name {
+    font-size: 80px;
+    transition: font-size 1s;
+}
+
+.title .about {
+    font-size: 50px;
+    transition: font-size 1s;
+}

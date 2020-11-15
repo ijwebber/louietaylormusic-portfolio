@@ -1,0 +1,27 @@
+
+.Music { 
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    transition: right 2s;
+    right: 100%;
+}
+
+.soundcloud {
+    margin: auto;
+}
+
+.soundcloud .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.soundcloud .row .element {
+    display: inline-block;
+}
+
+.element.mr {
+    margin-right: 160px;
+}
