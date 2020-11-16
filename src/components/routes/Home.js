@@ -7,7 +7,6 @@ export default function Home(props) {
     return (
         <Page position={props.position}>
             <div className="Home">
-                <div style={{ height: "72px" }}></div>
                 <img src={notes} className="music-notes" alt="musical-notes" />
                 <div className="title">
                     <img src={logo} className="logo" alt="logo" />

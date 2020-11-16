@@ -50,7 +50,6 @@ export default function Music(props) {
     return (
         <Page position={props.position}>
             <div className="Music">
-                <div style={{ height: "72px" }}></div>
                 <Soundcloud />
             </div>
         </Page>

@@ -57,7 +57,7 @@ class MainComponent extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar onClicked={this.switchPages} />
+        <Navbar onClicked={this.switchPages} current={this.state.current_page} />
         <Home position={((0 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
         <Music position={((1 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
         <About position={((2 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
