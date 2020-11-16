@@ -1,4 +1,9 @@
 import './Navbar.css';
+import facebook from '../assets/logos/facebook.png';
+import instagram from '../assets/logos/instagram.png';
+import youtube from '../assets/logos/youtube.png';
+import soundcloud from '../assets/logos/soundcloud.png';
+
 
 export default function Navbar(props) {
 
@@ -24,6 +29,7 @@ export default function Navbar(props) {
 
     return (
         <div className="header">
+
             <div className="links">
                 <a className="link" href="/#home" onClick={homeClicked} style={{ color: props.current === "home" ? "white" : "#FF6C00" }}>Home</a>
                 <a className="link" href="/#music" onClick={musicClicked} style={{ color: props.current === "music" ? "white" : "#FF6C00" }}>Music</a>

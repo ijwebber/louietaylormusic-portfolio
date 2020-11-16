@@ -68,20 +68,4 @@ class MainComponent extends Component {
   }
 }
 
-/*
-function App(props) {
-  return (
-    <div className="App">
-      <Navbar />
-
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/music" component={Music} />
-        <Route component={Error} />
-      </Switch>
-
-    </div>
-  );
-}*/
-
 export default App;

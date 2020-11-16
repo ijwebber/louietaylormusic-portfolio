@@ -3,21 +3,21 @@
     margin-top: 122px;
 }
 
+iframe {
+    width: 300px;
+    height: 350px;
+}
+
+.element {
+    margin: 0 5%;
+    margin-bottom: 30px;
+}
+
 .soundcloud {
     margin: auto;
-}
-
-.soundcloud .row {
+    width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.soundcloud .row .element {
-    display: inline-block;
-}
-
-.element.mr {
-    margin-right: 160px;
+    transition: display 2s;
 }

@@ -12,6 +12,25 @@
     top:0;
 }
 
+.header .logos {
+    position: absolute;
+    margin-top: 10px;
+}
+
+.header .logo {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+}
+
+.header .logo_lg {
+    width: 30px;
+    height: 30px;
+    margin: 0 30px;
+    position: relative;
+    bottom: 5px;
+}
+
 .header .links .link {
     margin-right: 66px;
     transition: color 0.5s, font-size 1s;
