@@ -38,6 +38,8 @@ class MainComponent extends Component {
         current_page: to
       }
     )
+
+    document.title = 'Louie Taylor - ' + (to === "takenotes" ? "TakeNotes" : to.charAt(0).toUpperCase() + to.substring(1));
   }
 
   getCurrentPos(page) {
