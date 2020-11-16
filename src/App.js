@@ -16,6 +16,7 @@ import { Component } from 'react';
 const App = withRouter(props => <MainComponent {...props} />);
 
 class MainComponent extends Component {
+
   constructor(props) {
     super(props)
 
@@ -25,6 +26,18 @@ class MainComponent extends Component {
 
     this.switchPages = this.switchPages.bind(this);
 
+  }
+
+
+  componentDidMount() {
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+      document.body.classList.add("resize-animation-stopper");
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        document.body.classList.remove("resize-animation-stopper");
+      }, 400);
+    });
   }
 
   convertPathToPage(path) {
