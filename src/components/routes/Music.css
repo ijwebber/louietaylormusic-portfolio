@@ -2,9 +2,6 @@
 .Music { 
     height: 100vh;
     width: 100vw;
-    position: relative;
-    transition: right 2s;
-    right: 100%;
 }
 
 .soundcloud {
