@@ -23,6 +23,7 @@ class MainComponent extends Component {
     this.state = {
       current_page: this.convertPathToPage(this.props.location.hash),
     }
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 
     this.switchPages = this.switchPages.bind(this);
 
@@ -38,6 +39,17 @@ class MainComponent extends Component {
         document.body.classList.remove("resize-animation-stopper");
       }, 400);
     });
+
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, header_height: document.getElementsByClassName("header")[0].clientHeight });
   }
 
   convertPathToPage(path) {
@@ -71,8 +83,8 @@ class MainComponent extends Component {
     return (
       <div className="App">
         <Navbar onClicked={this.switchPages} current={this.state.current_page} />
-        <Home position={((0 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
-        <Music position={((1 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
+        <Home position={((0 - this.getCurrentPos(this.state.current_page)) * 100).toString()} width={this.state.width} />
+        <Music position={((1 - this.getCurrentPos(this.state.current_page)) * 100).toString()} marginTop={this.state.header_height} />
         <About position={((2 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
         <TakeNotes position={((3 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
         <Contact position={((4 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />

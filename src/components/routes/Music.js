@@ -36,7 +36,7 @@ function Soundcloud() {
 export default function Music(props) {
     return (
         <Page position={props.position}>
-            <div className="Music">
+            <div className="Music" style={{ marginTop: (props.marginTop - 47 + 122).toString() + "px" }}>
                 <Soundcloud />
             </div>
         </Page>
