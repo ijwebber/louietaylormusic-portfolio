@@ -1,31 +1,96 @@
-.Home { 
-    margin-top: 232px;
+.Home {
+  margin-top: 232px;
 }
 
 .music-notes {
-    position: absolute;
-    z-index: -1;
-    height: 80vh;
-    top: 10%;
-    left: 2%;
+  position: absolute;
+  z-index: -1;
+  height: 80vh;
+  top: 10%;
+  left: 2%;
 }
 
 .title {
-    text-align: center;
+  text-align: center;
 }
 
 .title .logo {
-    width: 196px;
-    height: 196px;
-    transition: width 0.5s, height 0.5s;
+  width: 196px;
+  height: 196px;
+  transition: width 0.5s, height 0.5s;
 }
 
 .title .name {
-    font-size: 80px;
-    transition: font-size 1s;
+  font-size: 80px;
+  transition: font-size 1s;
 }
 
 .title .about {
-    font-size: 50px;
-    transition: font-size 1s;
+  font-size: 50px;
+  transition: font-size 1s;
+}
+
+/* TESTIMONIALS */
+
+.carousel-wrapper {
+  margin-top: 32px;
+}
+
+.carousel .slide {
+  background: none !important;
+}
+
+.testimonial {
+  width: 45vw;
+  padding: 0 17.5vw;
+}
+
+.testimonial .text {
+  width: 45vw;
+  font-size: 17px;
+  font-style: italic;
+  text-align: left;
+  margin: auto;
+}
+
+.testimonial .author {
+  font-size: 16px;
+  width: 45vw;
+  text-align: right;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.control-arrow {
+  margin: 0 23vw;
+}
+
+@media (max-width: 1000px) {
+  .testimonial {
+    width: 60vw;
+    padding: 0 10vw;
+  }
+
+  .testimonial .text {
+    width: 60vw;
+  }
+
+  .testimonial .author {
+    width: 60vw;
+  }
+
+  .control-arrow {
+    margin: 0 8vw;
+  }
+}
+
+.testimonials {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.testimonials .title {
+  display: inline;
+  font-size: 32px;
+  border-bottom: solid 1px #ff6c00;
 }

@@ -33,10 +33,10 @@ export default function Navbar(props) {
 
             <div class="column side" >
                 <div className="logos">
-                    <a href="https://www.facebook.com/louietaylormusic" className="logo-lg"><img src={facebook} className="lg" alt="facebook" /></a>
-                    <a href="https://www.instagram.com/louie_taylorrrrr/" className="logo-lg"><img src={instagram} className="lg" alt="instagram" /></a>
-                    <a href="https://www.youtube.com/user/1LEDGEProductions1" className="logo-sm"><img src={youtube} className="sm" alt="youtube" /></a>
-                    <a href="https://soundcloud.com/louiejtaylor" className="logo-sm"><img src={soundcloud} className="sm" alt="soundcloud" /></a>
+                    <a href="https://www.facebook.com/louietaylormusic" target="_blank" rel="noreferrer noopener" className="logo-lg"><img src={facebook} className="lg" alt="facebook" /></a>
+                    <a href="https://www.instagram.com/louie_taylorrrrr/" target="_blank" rel="noreferrer noopener" className="logo-lg"><img src={instagram} className="lg" alt="instagram" /></a>
+                    <a href="https://www.youtube.com/user/1LEDGEProductions1" target="_blank" rel="noreferrer noopener" className="logo-sm"><img src={youtube} className="sm" alt="youtube" /></a>
+                    <a href="https://soundcloud.com/louiejtaylor" target="_blank" rel="noreferrer noopener" className="logo-sm" style={{ marginTop: "3px" }}><img src={soundcloud} className="sm" alt="soundcloud" /></a>
                 </div>
             </div>
             <div class="column middle" >
