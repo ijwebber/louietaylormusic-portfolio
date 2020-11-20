@@ -12,9 +12,8 @@ class MyCarousel extends Component {
     render() {
         return (
             <div className="testimonials">
-                <p className="title">Testimonials</p>
                 <div class="carousel-wrapper">
-                    <Carousel infiniteLoop useKeyboardArrows autoPlay showStatus={false} showIndicators={false} centerMode={true} showThumbs={false}>
+                    <Carousel infiniteLoop useKeyboardArrows autoPlay interval={5000} showStatus={false} showIndicators={false} centerMode={true} showThumbs={false}>
                         <div class="testimonial active">
                             <p class="text">“Louie was flexible took a real interest in my project. He talked with me to
                             understand what the

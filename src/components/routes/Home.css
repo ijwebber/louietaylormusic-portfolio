@@ -63,6 +63,20 @@
 
 .control-arrow {
   margin: 0 23vw;
+  background: none !important;
+}
+
+.control-arrow:before {
+  border-top: 24px solid transparent !important;
+  border-bottom: 24px solid transparent !important;
+}
+
+.control-next.control-arrow:before {
+  border-left: 10px solid #ff6c00 !important;
+}
+
+.control-prev.control-arrow:before {
+  border-right: 10px solid #ff6c00 !important;
 }
 
 @media (max-width: 1000px) {
@@ -87,10 +101,4 @@
 .testimonials {
   text-align: center;
   margin-top: 16px;
-}
-
-.testimonials .title {
-  display: inline;
-  font-size: 32px;
-  border-bottom: solid 1px #ff6c00;
 }
