@@ -34,6 +34,13 @@
 
 .carousel-wrapper {
   margin-top: 32px;
+  width: 50vw;
+  margin-left: 25vw;
+}
+
+.slider-wrapper {
+  width: 75vw !important;
+  margin-left: -12.5vw !important;
 }
 
 .carousel .slide {
@@ -41,28 +48,24 @@
 }
 
 .testimonial {
-  width: 45vw;
-  padding: 0 17.5vw;
+  width: 100%;
+  padding: 0 15%;
+  margin: auto;
 }
 
 .testimonial .text {
-  width: 45vw;
   font-size: 17px;
   font-style: italic;
   text-align: left;
-  margin: auto;
 }
 
 .testimonial .author {
   font-size: 16px;
-  width: 45vw;
   text-align: right;
-  margin: auto;
   margin-top: 10px;
 }
 
 .control-arrow {
-  margin: 0 23vw;
   background: none !important;
 }
 
@@ -79,22 +82,14 @@
   border-right: 10px solid #ff6c00 !important;
 }
 
-@media (max-width: 1000px) {
-  .testimonial {
-    width: 60vw;
-    padding: 0 10vw;
+@media (max-width: 1200px) {
+  .carousel-wrapper {
+    width: 90vw;
+    margin-left: 5vw;
   }
-
-  .testimonial .text {
-    width: 60vw;
-  }
-
-  .testimonial .author {
-    width: 60vw;
-  }
-
-  .control-arrow {
-    margin: 0 8vw;
+  .slider-wrapper {
+    width: 100vw !important;
+    margin-left: -5vw !important;
   }
 }
 
