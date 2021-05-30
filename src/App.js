@@ -5,7 +5,7 @@ import './App.css';
 import Home from './components/routes/Home';
 import Music from './components/routes/Music';
 import About from './components/routes/About';
-import TakeNotes from './components/routes/TakeNotes';
+import Projects from './components/routes/Projects';
 import Contact from './components/routes/Contact';
 
 // Components
@@ -28,8 +28,6 @@ class MainComponent extends Component {
     this.switchPages = this.switchPages.bind(this);
 
   }
-
-
   componentDidMount() {
     let resizeTimer;
     window.addEventListener("resize", () => {
@@ -64,7 +62,7 @@ class MainComponent extends Component {
       }
     )
 
-    document.title = 'Louie Taylor - ' + (to === "takenotes" ? "TakeNotes" : to.charAt(0).toUpperCase() + to.substring(1));
+    document.title = 'Louie Taylor - ' + to.charAt(0).toUpperCase() + to.substring(1);
   }
 
   getCurrentPos(page) {
@@ -72,7 +70,7 @@ class MainComponent extends Component {
       home: 0,
       music: 1,
       about: 2,
-      takenotes: 3,
+      projects: 3,
       contact: 4
     }
 
@@ -86,7 +84,7 @@ class MainComponent extends Component {
         <Home position={((0 - this.getCurrentPos(this.state.current_page)) * 100).toString()} width={this.state.width} />
         <Music position={((1 - this.getCurrentPos(this.state.current_page)) * 100).toString()} marginTop={this.state.header_height} />
         <About position={((2 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
-        <TakeNotes position={((3 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
+        <Projects position={((3 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
         <Contact position={((4 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
       </div>
     );

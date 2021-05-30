@@ -19,8 +19,8 @@ export default function Navbar(props) {
         props.onClicked("about");
     }
 
-    function takenotesClicked() {
-        props.onClicked("takenotes");
+    function projectsClicked() {
+        props.onClicked("projects");
     }
 
     function contactClicked() {
@@ -44,7 +44,7 @@ export default function Navbar(props) {
                     <a className="link" href="/#home" onClick={homeClicked} style={{ color: props.current === "home" ? "white" : "#FF6C00" }}>Home</a>
                     <a className="link" href="/#music" onClick={musicClicked} style={{ color: props.current === "music" ? "white" : "#FF6C00" }}>Music</a>
                     <a className="link" href="/#about" onClick={aboutClicked} style={{ color: props.current === "about" ? "white" : "#FF6C00" }}>About</a>
-                    <a className="link" href="/#takenotes" onClick={takenotesClicked} style={{ color: props.current === "takenotes" ? "white" : "#FF6C00" }}>TakeNotes</a>
+                    <a className="link" href="/#projects" onClick={projectsClicked} style={{ color: props.current === "projects" ? "white" : "#FF6C00" }}>Projects</a>
                     <a className="link" href="/#contact" onClick={contactClicked} style={{ color: props.current === "contact" ? "white" : "#FF6C00" }}>Contact</a>
                 </div>
             </div>
