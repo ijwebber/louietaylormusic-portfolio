@@ -1,6 +1,13 @@
 .back-form {
-  background-color: white;
   width: 50vw;
   height: 75vh;
   margin: auto;
+  margin-top: 16vh;
+  font-size: 4vh;
+}
+
+.Contact .profile {
+  width: 15vw;
+  margin-left: 17.5vw;
+  margin-top: 4vh;
 }

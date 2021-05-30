@@ -8,12 +8,21 @@ import notes from '../../assets/music-notes.png';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+function Testimonial(props) {
+    return (
+        <div class="testimonial">
+            <p class="text">{props.text}</p>
+            <p class="author">{props.author}</p>
+        </div>
+    );
+}
 class MyCarousel extends Component {
     render() {
         return (
             <div className="testimonials">
                 <div class="carousel-wrapper">
                     <Carousel infiniteLoop useKeyboardArrows autoPlay interval={5000} transitionTime={500} showStatus={false} showIndicators={false} centerMode={true} showThumbs={false}>
+
                         <div class="testimonial active">
                             <p class="text">“Louie was flexible took a real interest in my project. He talked with me to
                             understand what the
@@ -36,6 +45,10 @@ class MyCarousel extends Component {
                             premier of his Piano Trio (piano, violin, cello) movement,
                             given a rapturous reception by the audience in a concert earlier this term (summer 2018)”</p>
                             <p class="author">- Andrew Painter, Head of Music, Lytchett Minster School and 6th Form | 2018</p>
+                        </div>
+                        <div class="testimonial">
+                            <p class="text">“Louie is talented, flexible, and clearly loves his work. He is a real joy to collaborate with.”</p>
+                            <p class="author">- Paul Herve, Founder: Rocket Ship Studios | 2020</p>
                         </div>
                     </Carousel>
                 </div></div>
