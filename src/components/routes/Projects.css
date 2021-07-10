@@ -1,5 +1,70 @@
 .Projects {
   text-align: center;
-  margin-top: 30vh;
   font-size: 4vh;
+  pointer-events: auto; 
 }
+
+.project-pics {
+  margin: auto;
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  display: inline-block;
+  height: 30vh;
+  margin: 3vh;
+  cursor: pointer;
+  transition: background-color 0.5s, opacity, color 0.5s;
+  color: rgba(255, 255, 255, 0);
+}
+
+.project:hover {
+  background-color: #ff6a00a9;
+  color: rgb(255, 255, 255);
+} 
+
+.project img {
+  position: relative;
+  z-index: -1;
+  height: 30vh;
+  vertical-align: middle;
+}
+
+.project .text-wrapper {
+  position: relative;
+  z-index: 2;
+  height: 30vh;
+  top: -30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+.project .text-wrapper .text {
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+.project .text-wrapper .text .title {
+  font-size: 3.5vh;
+  font-weight: 600;
+}
+
+.project .text-wrapper .text .subtitle {
+  font-size: 2.5vh;
+}
+
+.project .text-wrapper .text .role {
+  font-size: 2.5vh;
+}
+
+.project .text-wrapper .text .dash {
+  line-height: 0.2vh;
+  height: 0.3vh;
+}
+
+

@@ -7,6 +7,26 @@
     overflow-x: hidden;
 }
 
+.Music {
+  pointer-events: auto;
+}
+
+.Contact {
+  pointer-events: auto;
+}
+
+.Home {
+  pointer-events: auto;
+}
+
+.Auto {
+  pointer-events: auto;
+}
+
+.testimonials {
+  pointer-events: auto;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;

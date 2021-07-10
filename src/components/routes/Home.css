@@ -4,6 +4,7 @@
 
 .music-notes {
   position: absolute;
+  pointer-events: none;
   z-index: -1;
   height: 80vh;
   top: 10%;

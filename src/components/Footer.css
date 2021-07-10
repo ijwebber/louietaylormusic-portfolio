@@ -1,0 +1,9 @@
+.Footer {
+    position: relative;
+    bottom: 0;
+    padding-bottom: 6vh;
+    margin-top: 5vh;
+    text-align: center;
+    width: 100vw;
+    z-index: -10;
+}

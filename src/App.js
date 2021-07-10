@@ -83,9 +83,9 @@ class MainComponent extends Component {
         <Navbar onClicked={this.switchPages} current={this.state.current_page} />
         <Home position={((0 - this.getCurrentPos(this.state.current_page)) * 100).toString()} width={this.state.width} />
         <Music position={((1 - this.getCurrentPos(this.state.current_page)) * 100).toString()} marginTop={this.state.header_height} />
-        <About position={((2 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
-        <Projects position={((3 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
-        <Contact position={((4 - this.getCurrentPos(this.state.current_page)) * 100).toString()} />
+        <About position={((2 - this.getCurrentPos(this.state.current_page)) * 100).toString()} marginTop={this.state.header_height}/>
+        <Projects position={((3 - this.getCurrentPos(this.state.current_page)) * 100).toString()} marginTop={this.state.header_height} />
+        <Contact position={((4 - this.getCurrentPos(this.state.current_page)) * 100).toString()} marginTop={this.state.header_height}/>
       </div>
     );
   }
