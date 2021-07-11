@@ -14,6 +14,23 @@ import ProjectPopup from './ProjectPopup';
 import { useState } from 'react';
 
 
+function ImageGridItem({ image }) {
+    const style = {
+        gridColumnEnd: `span ${getSpanEstimate(image.width)}`,
+        gridRowEnd: `span ${getSpanEstimate(image.height)}`,
+    }
+
+    return <img style={style} src={image.url} alt={image.alt} />
+}
+
+function getSpanEstimate(size) {
+    if (size > 250) {
+        return 2
+    }
+
+    return 1
+}
+
 function Project(props) {
     return (
         <div className="project" id={props.name} onClick={props.togglePopup}>
@@ -49,24 +66,21 @@ function ProjectGrid(props) {
     );
 }
 
+function PopupContent(props) {
+    return (
+        <>
+            <b>{props.title}</b>
+            <p>{props.subtitle} | {props.role}</p>
+        </>
+    );
+}
+
 
 export default function Projects(props) {
     const [isOpen, setIsOpen] = useState(false);
-    const [popupOpacity, setPopupOpacity] = useState(0)
  
     const togglePopup = () => {
-        if (isOpen) {
-            // CLOSING
-            // Fade Out
-            setIsOpen(!isOpen);
-        } else {
-            // OPENING
-            // Set value of the popup and then set to open
-            setIsOpen(!isOpen);
-            //setPopupOpacity(1);
-        }
-
-        
+        setIsOpen(!isOpen)        
     }
 
     return (
@@ -76,10 +90,11 @@ export default function Projects(props) {
 
                 {<ProjectPopup
                     content={
-                        <>
-                            <b>Title</b>
-                            <p>Job | Role</p>
-                        </>
+                        <PopupContent 
+                            title={<span>Inner Spirits for String Quartet</span>} 
+                            subtitle="Concert Music" 
+                            role="Composer"
+                        />
                     }
                     handleClose={togglePopup}
                     isOpen={isOpen}
