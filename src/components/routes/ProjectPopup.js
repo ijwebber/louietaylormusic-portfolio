@@ -10,6 +10,7 @@ export default function ProjectPopup(props) {
             <div className="box">
                 {props.content}
             </div>
+            <div className="close-icon" onClick={props.handleClose}>Close</div>
         </div>
     );
 }

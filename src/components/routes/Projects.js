@@ -15,6 +15,7 @@ import { useState } from 'react';
 
 
 function ImageGridItem({ image }) {
+    console.log(image)
     const style = {
         gridColumnEnd: `span ${getSpanEstimate(image.width)}`,
         gridRowEnd: `span ${getSpanEstimate(image.height)}`,
@@ -53,15 +54,15 @@ function ProjectGrid(props) {
 
     return (
         <div className="project-pics">
-            <Project img={SymphonyNo1} name="SymphonyNo1" title="Symphony No. 1" subtitle="Concert Music" role="Composer"/>
+            <Project img={SymphonyNo1} name="SymphonyNo1" title="Symphony No. 1" subtitle="Concert Music" role="Composer" togglePopup={togglePopup}/>
             <Project img={InnerSpirits} name="InnerSpirits" title={<span>Inner Spirits<br></br>for String Quartet</span>} subtitle="Concert Music" role="Composer" togglePopup={togglePopup}/>
-            <Project img={Cocomelon} name="Cocomelon" title="Cocomelon" subtitle="Netflix & YouTube Children's Show" role="Composer & Songwriter" />
-            <Project img={AdaptPic} name="AdaptPic" title="Adapt" subtitle="Video Game" role="Composer" />
-            <Project img={Drain} name="Drain" title={<span>Circling <br></br>The Drain</span>} subtitle="Film" role="Composer" />
-            <Project img={Summer} name="Summer" title={<span>Summer <br></br> Heat</span>} subtitle="Film" role="Composer" />
-            <Project img={AOTE} name="AOTE" title={<span>Alchemy<br></br>of the Earth</span>} subtitle="Video Game" role="Composer" />
-            <Project img={ScoreRelief} name="ScoreRelief" title={<span>Score Relief <br></br> Competition 2021</span>} subtitle="Film (Rescore)" role="Composer" />
-            <Project img={PastByJune} name="PastByJune" title={<span>The Past <br></br> by June</span>} subtitle="Film" role="Composer" />            
+            <Project img={Cocomelon} name="Cocomelon" title="Cocomelon" subtitle="Netflix & YouTube Children's Show" role="Composer & Songwriter" togglePopup={togglePopup}/>
+            <Project img={AdaptPic} name="AdaptPic" title="Adapt" subtitle="Video Game" role="Composer" togglePopup={togglePopup}/>
+            <Project img={Drain} name="Drain" title={<span>Circling <br></br>The Drain</span>} subtitle="Film" role="Composer" togglePopup={togglePopup}/>
+            <Project img={Summer} name="Summer" title={<span>Summer <br></br> Heat</span>} subtitle="Film" role="Composer" togglePopup={togglePopup}/>
+            <Project img={AOTE} name="AOTE" title={<span>Alchemy<br></br>of the Earth</span>} subtitle="Video Game" role="Composer" togglePopup={togglePopup}/>
+            <Project img={ScoreRelief} name="ScoreRelief" title={<span>Score Relief <br></br> Competition 2021</span>} subtitle="Film (Rescore)" role="Composer" togglePopup={togglePopup}/>
+            <Project img={PastByJune} name="PastByJune" title={<span>The Past <br></br> by June</span>} subtitle="Film" role="Composer" togglePopup={togglePopup}/>            
         </div>
     );
 }
@@ -84,7 +85,7 @@ export default function Projects(props) {
     }
 
     return (
-        <Page position={props.position}>
+        <Page position={props.position} popupOpen={isOpen}>
             <div className="Projects" style={{ marginTop: (props.marginTop + 50).toString() + "px" }}>
                 <ProjectGrid togglePopup={togglePopup}/>
 
