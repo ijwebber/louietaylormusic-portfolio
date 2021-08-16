@@ -5,19 +5,19 @@
 
 .About .content {
   margin: auto;
-  font-size: 1.3vw;
-  width: 65vw;
+  font-size: 1.2vw;
+  width: 60vw;
 }
 
 .About .content .row {
   display: flex;
   align-items: center;
-  width: 65vw;
+  width: 60vw;
   margin-top: 5vh;
 }
 
 .About .content .row .image-wrapper {
-  flex: 0 0 20vw;
+  flex: 0 0 15vw;
 }
 
 .About .content img {
