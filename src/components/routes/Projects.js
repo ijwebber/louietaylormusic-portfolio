@@ -12,6 +12,7 @@ import Summer from '../../assets/project-photos/summer.png';
 import SymphonyNo1 from '../../assets/project-photos/Symphony_No1.jpg';
 import ProjectPopup from './ProjectPopup';
 import { useState } from 'react';
+import ProjectPages from './ProjectPages';
 
 
 function ImageGridItem({ image }) {
@@ -49,14 +50,32 @@ function Project(props) {
     );
 }
 
+function GetProjectPopup(x) {
+    switch (x) {
+        case 0:
+            return ProjectPages.SymphonyNo1();
+        case 1:
+            return ProjectPages.InnerSpirits();
+    
+        default:
+            break;
+    }
+}
+
 function ProjectGrid(props) {
     const togglePopup = props.togglePopup;
 
+
+    // Closures for each popup
+    const popupSymphonyNo1 = () => {return togglePopup(ProjectPages.SymphonyNo1())}
+    const popupInnerSpirits = () => {return togglePopup(ProjectPages.InnerSpirits())}
+
+
     return (
         <div className="project-pics">
-            <Project img={SymphonyNo1} name="SymphonyNo1" title="Symphony No. 1" subtitle="Concert Music" role="Composer" togglePopup={togglePopup}/>
-            <Project img={InnerSpirits} name="InnerSpirits" title={<span>Inner Spirits<br></br>for String Quartet</span>} subtitle="Concert Music" role="Composer" togglePopup={togglePopup}/>
+            <Project img={SymphonyNo1} name="SymphonyNo1" title="Symphony No. 1" subtitle="Concert Music" role="Composer" togglePopup={popupSymphonyNo1}/>
             <Project img={Cocomelon} name="Cocomelon" title="Cocomelon" subtitle="Netflix & YouTube Children's Show" role="Composer & Songwriter" togglePopup={togglePopup}/>
+            <Project img={InnerSpirits} name="InnerSpirits" title={<span>Inner Spirits<br></br>for String Quartet</span>} subtitle="Concert Music" role="Composer" togglePopup={popupInnerSpirits}/>
             <Project img={AdaptPic} name="AdaptPic" title="Adapt" subtitle="Video Game" role="Composer" togglePopup={togglePopup}/>
             <Project img={Drain} name="Drain" title={<span>Circling <br></br>The Drain</span>} subtitle="Film" role="Composer" togglePopup={togglePopup}/>
             <Project img={Summer} name="Summer" title={<span>Summer <br></br> Heat</span>} subtitle="Film" role="Composer" togglePopup={togglePopup}/>
@@ -79,23 +98,25 @@ function PopupContent(props) {
 
 export default function Projects(props) {
     const [isOpen, setIsOpen] = useState(false);
+    const [popup, setPopup] = useState(ProjectPages.SymphonyNo1());
  
     const togglePopup = () => {
-        setIsOpen(!isOpen)        
+        setIsOpen(!isOpen);        
+    }
+
+    const togglePopupWithChange = (content) => {
+        setPopup(content);
+        setIsOpen(!isOpen);
     }
 
     return (
         <Page position={props.position} popupOpen={isOpen}>
             <div className="Projects" style={{ marginTop: (props.marginTop + 50).toString() + "px" }}>
-                <ProjectGrid togglePopup={togglePopup}/>
+                <ProjectGrid togglePopup={togglePopupWithChange}/>
 
                 {<ProjectPopup
                     content={
-                        <PopupContent 
-                            title={<span>Inner Spirits for String Quartet</span>} 
-                            subtitle="Concert Music" 
-                            role="Composer"
-                        />
+                        popup
                     }
                     handleClose={togglePopup}
                     isOpen={isOpen}

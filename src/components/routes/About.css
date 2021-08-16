@@ -1,5 +1,33 @@
 .About {
   text-align: center;
-  margin-top: 30vh;
-  font-size: 4vh;
+  font-size: 1.5vw;
+}
+
+.About .content {
+  margin: auto;
+  font-size: 1.3vw;
+  width: 65vw;
+}
+
+.About .content .row {
+  display: flex;
+  align-items: center;
+  width: 65vw;
+  margin-top: 5vh;
+}
+
+.About .content .row .image-wrapper {
+  flex: 0 0 20vw;
+}
+
+.About .content img {
+  width: 100%;
+}
+
+.About .content .text {
+  flex: 1;
+  padding: 0 2vw;
+  
+  display: inline-block;
+  height: 100%;
 }

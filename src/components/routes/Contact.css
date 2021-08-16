@@ -1,13 +1,83 @@
-.back-form {
-  width: 50vw;
-  height: 75vh;
+.Contact .alternative {
   margin: auto;
-  margin-top: 16vh;
-  font-size: 4vh;
+  text-align: center;
+  font-size: 2vh;
 }
 
-.Contact .profile {
-  width: 15vw;
-  margin-left: 17.5vw;
-  margin-top: 4vh;
+.Contact .alternative a {
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-form {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.contact-form .title {
+  font-size: 5vh;
+  margin-bottom: 2vh;
+}
+
+.contact-form .enter-box input {
+  width: 30vw;
+  min-width: 400px;
+  height: 5vh;
+  font-size: 2vh;
+  margin-bottom: 2vh;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.082);
+  color: white;
+  outline: none;
+  border: none;
+  border-bottom: 2px #ff6c00 solid;
+  padding: 24px 1vw;
+  transition: border-bottom .5s;
+}
+
+.contact-form .enter-box input:active {
+  border-bottom: 2px white solid;
+}
+
+.contact-form .enter-box input:focus {
+  border-bottom: 2px white solid;
+}
+
+.contact-form textarea:active {
+  border-bottom: 2px white solid;
+}
+
+.contact-form textarea:focus {
+  border-bottom: 2px white solid;
+}
+
+.contact-form textarea {
+  width: 30vw;
+  min-width: 400px;
+  font-size: 2vh;
+  color: white;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.082);
+  outline: none;
+  border-bottom: 2px #ff6c00 solid;
+  margin-bottom: 2vh;
+  padding: 12px 1vw;
+  transition: border-bottom .5s;
+}
+
+.contact-form .submit {
+  color: white;
+  font-size: 2.5vh;
+  cursor: pointer;
+  transition: color .3s;
+  background-color: transparent;
+  border: none;
+}
+
+.contact-form .submit:hover {
+  color: #ff6c00;
+}
+
+.contact-form .submit:active {
+  color: #b14a00;
 }
