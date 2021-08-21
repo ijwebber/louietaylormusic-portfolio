@@ -74,7 +74,7 @@ export default function Projects(props) {
     }
 
     return (
-        <Page position={props.position} popupOpen={isOpen}>
+        <Page position={props.position}>
             <div className="Projects" style={{ marginTop: (props.marginTop + 50).toString() + "px" }}>
                 <ProjectGrid togglePopup={togglePopupWithChange}/>
 

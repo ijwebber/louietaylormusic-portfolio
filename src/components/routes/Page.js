@@ -2,9 +2,11 @@ import Footer from "../Footer"
 import "./Page.css"
 
 export default function Page(props) {
-    const popupOpen = props.popupOpen != null ? props.popupOpen : false;
+    const active = props.position === "0";
+
+
     return (
-        popupOpen
+        active
         ?
         <div className="Page">
             {props.children}
