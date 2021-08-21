@@ -1,0 +1,20 @@
+.popup-content {
+    padding: 1vh 2vw;
+    text-align: left;
+}
+
+.popup-content .content .text {
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.popup-content .content .vids {
+    width: 50vw;
+    margin: 1vh auto;
+}
+
+.popup-content .content .vids .video {
+    width: 50vw;
+    height: 28vw;
+}

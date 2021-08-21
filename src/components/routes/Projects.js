@@ -14,25 +14,6 @@ import ProjectPopup from './ProjectPopup';
 import { useState } from 'react';
 import ProjectPages from './ProjectPages';
 
-
-function ImageGridItem({ image }) {
-    console.log(image)
-    const style = {
-        gridColumnEnd: `span ${getSpanEstimate(image.width)}`,
-        gridRowEnd: `span ${getSpanEstimate(image.height)}`,
-    }
-
-    return <img style={style} src={image.url} alt={image.alt} />
-}
-
-function getSpanEstimate(size) {
-    if (size > 250) {
-        return 2
-    }
-
-    return 1
-}
-
 function Project(props) {
     return (
         <div className="project" id={props.name} onClick={props.togglePopup}>
@@ -50,51 +31,34 @@ function Project(props) {
     );
 }
 
-function GetProjectPopup(x) {
-    switch (x) {
-        case 0:
-            return ProjectPages.SymphonyNo1();
-        case 1:
-            return ProjectPages.InnerSpirits();
-    
-        default:
-            break;
-    }
-}
-
 function ProjectGrid(props) {
     const togglePopup = props.togglePopup;
-
 
     // Closures for each popup
     const popupSymphonyNo1 = () => {return togglePopup(ProjectPages.SymphonyNo1())}
     const popupInnerSpirits = () => {return togglePopup(ProjectPages.InnerSpirits())}
-
+    const popupCocomelon = () => {return togglePopup(ProjectPages.Cocomelon())}
+    const popupAdapt = () => {return togglePopup(ProjectPages.Adapt())}
+    const popupCirclingTheDrain = () => {return togglePopup(ProjectPages.CirclingTheDrain())}
+    const popupSummerHeat = () => {return togglePopup(ProjectPages.SummerHeat())}
+    const popupScoreRelief2021 = () => {return togglePopup(ProjectPages.ScoreRelief2021())}
+    const popupPastByJune = () => {return togglePopup(ProjectPages.PastByJune())}
+    const popupAlchemyEarth = () => {return togglePopup(ProjectPages.AlchemyEarth())}
 
     return (
         <div className="project-pics">
             <Project img={SymphonyNo1} name="SymphonyNo1" title="Symphony No. 1" subtitle="Concert Music" role="Composer" togglePopup={popupSymphonyNo1}/>
-            <Project img={Cocomelon} name="Cocomelon" title="Cocomelon" subtitle="Netflix & YouTube Children's Show" role="Composer & Songwriter" togglePopup={togglePopup}/>
+            <Project img={Cocomelon} name="Cocomelon" title="Cocomelon" subtitle="Netflix & YouTube Children's Show" role="Composer & Songwriter" togglePopup={popupCocomelon}/>
             <Project img={InnerSpirits} name="InnerSpirits" title={<span>Inner Spirits<br></br>for String Quartet</span>} subtitle="Concert Music" role="Composer" togglePopup={popupInnerSpirits}/>
-            <Project img={AdaptPic} name="AdaptPic" title="Adapt" subtitle="Video Game" role="Composer" togglePopup={togglePopup}/>
-            <Project img={Drain} name="Drain" title={<span>Circling <br></br>The Drain</span>} subtitle="Film" role="Composer" togglePopup={togglePopup}/>
-            <Project img={Summer} name="Summer" title={<span>Summer <br></br> Heat</span>} subtitle="Film" role="Composer" togglePopup={togglePopup}/>
-            <Project img={AOTE} name="AOTE" title={<span>Alchemy<br></br>of the Earth</span>} subtitle="Video Game" role="Composer" togglePopup={togglePopup}/>
-            <Project img={ScoreRelief} name="ScoreRelief" title={<span>Score Relief <br></br> Competition 2021</span>} subtitle="Film (Rescore)" role="Composer" togglePopup={togglePopup}/>
-            <Project img={PastByJune} name="PastByJune" title={<span>The Past <br></br> by June</span>} subtitle="Film" role="Composer" togglePopup={togglePopup}/>            
+            <Project img={AdaptPic} name="AdaptPic" title="Adapt" subtitle="Video Game" role="Composer" togglePopup={popupAdapt}/>
+            <Project img={Drain} name="Drain" title={<span>Circling <br></br>The Drain</span>} subtitle="Film" role="Composer" togglePopup={popupCirclingTheDrain}/>
+            <Project img={Summer} name="Summer" title={<span>Summer <br></br> Heat</span>} subtitle="Film" role="Composer" togglePopup={popupSummerHeat}/>
+            <Project img={AOTE} name="AOTE" title={<span>Alchemy<br></br>of the Earth</span>} subtitle="Video Game" role="Composer" togglePopup={popupAlchemyEarth}/>
+            <Project img={ScoreRelief} name="ScoreRelief" title={<span>Score Relief <br></br> Competition 2021</span>} subtitle="Film (Rescore)" role="Composer" togglePopup={popupScoreRelief2021}/>
+            <Project img={PastByJune} name="PastByJune" title={<span>The Past <br></br> by June</span>} subtitle="Film" role="Composer" togglePopup={popupPastByJune}/>            
         </div>
     );
 }
-
-function PopupContent(props) {
-    return (
-        <>
-            <b>{props.title}</b>
-            <p>{props.subtitle} | {props.role}</p>
-        </>
-    );
-}
-
 
 export default function Projects(props) {
     const [isOpen, setIsOpen] = useState(false);
