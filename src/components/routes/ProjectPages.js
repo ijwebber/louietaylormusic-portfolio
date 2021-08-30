@@ -40,7 +40,7 @@ export default class ProjectPages {
                 This symphony has been both an expression of my artistic identity and an exercise in abstract music. I was strongly inclined to write a some-what programmatic piece of music. Something that would depict a series of events in my life that meant a great deal to me and had a huge impact. However, after consideration and guidance, I realised that to truly express myself and transcend past a literal depiction of my experiences, abstraction should be my focus. It has been a great challenge to prioritise the music over my own ego, but in doing so I feel I have become more mindful as a person and more focused on the art itself rather than expressing my own feelings as they are. Which, as a result, has concluded in the same way I originally intended with a programmatic depiction: to write honest music which accurately expresses my emotions and experiences. 
                 <br></br>
                 <br></br>
-                You can find a demo of my Symphony on my soundcloud here: <a href="https://soundcloud.com/louiejtaylor/sets/symphony-no-1-demo">https://soundcloud.com/louiejtaylor/sets/symphony-no-1-demo</a>
+                You can find a demo of my Symphony on my soundcloud here: <a href="https://soundcloud.com/louiejtaylor/sets/symphony-no-1-demo" target="_blank" rel="noreferrer noopener">https://soundcloud.com/louiejtaylor/sets/symphony-no-1-demo</a>
                 <br></br>
                 <br></br>
                 And if you wish to see the full score please contact me for more information. Also, if you’re interested in performing my work, then please contact me too and we can arrange for the parts and score to be shared.
@@ -57,7 +57,7 @@ export default class ProjectPages {
                 This composition was written about the nature of the mind and my own experiences discovering my own mind and its nature, temperament and weaknesses. Furthermore, the piece draws on topics from nature itself and tries to express the relationship of nature and its laws with the mind. 
                 <br></br>
                 <br></br>
-                It was recorded fully by the wonderful string performer Liz Lister. The recording and score video can be found here: <a href="https://youtu.be/MhKT3YNcqcA">https://youtu.be/MhKT3YNcqcA </a>
+                It was recorded fully by the wonderful string performer Liz Lister. The recording and score video can be found here: <a href="https://youtu.be/MhKT3YNcqcA" target="_blank" rel="noreferrer noopener">https://youtu.be/MhKT3YNcqcA </a>
                 </div>}
                 vids={["https://www.youtube.com/embed/MhKT3YNcqcA"]}
             ></PopupContent>
@@ -72,7 +72,7 @@ export default class ProjectPages {
                     I have been a composer for the exciting and vibrant children's show ‘CoComelon’. I have been on board the composing team since January 2021 and hope to spend much more time involved. I am currently involved in the creation of their songs for their YouTube channel and the upcoming netflix series ‘CoComelon Lane’. I am also a composer on a new project called ‘Cocomelon Storytime’ which I hope to be able to disclose more information about in the coming months.
                     <br></br>
                     <br></br>
-                    You can find CoComelon’s YouTube channel here: <a href="https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ">https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ</a>
+                    You can find CoComelon’s YouTube channel here: <a href="https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ" target="_blank" rel="noreferrer noopener">https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ</a>
                 </div>}
             ></PopupContent>
         );
@@ -89,7 +89,7 @@ export default class ProjectPages {
                     The game is set to release in mid-2022 and is being published on Steam by Slug Disco.
                     <br></br>
                     <br></br>
-                    You can find an example of my work on adapt here: <a href="https://youtu.be/MnFdXfAAoDU ">https://youtu.be/MnFdXfAAoDU</a>
+                    You can find an example of my work on adapt here: <a href="https://youtu.be/MnFdXfAAoDU" target="_blank" rel="noreferrer noopener">https://youtu.be/MnFdXfAAoDU</a>
                 </div>}
                 vids={["https://www.youtube.com/embed/MnFdXfAAoDU"]}
             ></PopupContent>
@@ -104,11 +104,18 @@ export default class ProjectPages {
                     ‘Circling The Drain’ is a gripping short drama/thriller film that is set in the south of england. The film shows two old friends meet up and, out of desperation decide to commit a robbery and burglarize a country home. This results in some catastrophic and tragic outcomes. 
                     <br></br>
                     <br></br>
-                    The full film will be released late 2021, but the full soundtrack album can be found here: <a href="https://youtu.be/ycahy6llWe8">https://youtu.be/ycahy6llWe8</a>
+                    The full film will be released late 2021, but the full soundtrack album can be found here: <a href="https://youtu.be/ycahy6llWe8" target="_blank" rel="noreferrer noopener">https://youtu.be/ycahy6llWe8</a>
                     <br></br>
                     <br></br>
-                    It will also be released on streaming services, such as spotify, very soon. 
-
+                    It is also available on most major streaming services, such as spotify:
+                    <iframe 
+                    title="Circling the Drain Spotify"
+                    style={{
+                        width: "100%",
+                        padding: "0 20%",
+                        marginTop: "1vh",
+                    }}
+                            src="https://open.spotify.com/embed/album/6nqDswuTP9mk8ahxDi4beU" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>}
                 vids={["https://www.youtube.com/embed/ycahy6llWe8"]}
             ></PopupContent>
@@ -137,10 +144,10 @@ export default class ProjectPages {
                     I took part in the Score Relief 2021 Competition in early 2021 and had a great time doing so. I’m very proud of my work that I did for it and so you can find it below along with a full breakdown of my process and project session.
                     <br></br>
                     <br></br>
-                    My entry to the Score Relief 2021 competition can be found here: <a href="https://youtu.be/oTfYuihK0ZM">https://youtu.be/oTfYuihK0ZM</a>
+                    My entry to the Score Relief 2021 competition can be found here: <a href="https://youtu.be/oTfYuihK0ZM" target="_blank" rel="noreferrer noopener">https://youtu.be/oTfYuihK0ZM</a>
                     <br></br>
                     <br></br>
-                    Also, a full breakdown walkthrough of my project logic session can be found on my YouTube channel here: <a href="https://youtu.be/sLBYwxKgjK0">https://youtu.be/sLBYwxKgjK0</a>
+                    Also, a full breakdown walkthrough of my project logic session can be found on my YouTube channel here: <a href="https://youtu.be/sLBYwxKgjK0" target="_blank" rel="noreferrer noopener">https://youtu.be/sLBYwxKgjK0</a>
                 </div>}
                 vids={["https://www.youtube.com/embed/oTfYuihK0ZM", "https://www.youtube.com/embed/sLBYwxKgjK0"]}
             ></PopupContent>
@@ -155,10 +162,10 @@ export default class ProjectPages {
                     This film was a very theatrical and unique short-film about a young and insecure girl at school confronting her past actions through a long therapeutic monologue in front of her teacher. After complaining for a while in a rage about her peers, she comes to the realisation that she, too, can be in the wrong.
                     <br></br>
                     <br></br>
-                    A sample of my work on the film can be found here: <a href="https://www.youtube.com/watch?v=r8SNA3-S1Tw">https://www.youtube.com/watch?v=r8SNA3-S1Tw</a>
+                    A sample of my work on the film can be found here: <a href="https://www.youtube.com/watch?v=r8SNA3-S1Tw" target="_blank" rel="noreferrer noopener">https://www.youtube.com/watch?v=r8SNA3-S1Tw</a>
                     <br></br>
                     <br></br>
-                    And the full album is on my bandcamp here: <a href="https://louietaylor.bandcamp.com/releases">https://louietaylor.bandcamp.com/releases</a>
+                    And the full album is on my bandcamp here: <a href="https://louietaylor.bandcamp.com/releases" target="_blank" rel="noreferrer noopener">https://louietaylor.bandcamp.com/releases</a>
                 </div>}
                 vids={["https://www.youtube.com/embed/r8SNA3-S1Tw "]}
             ></PopupContent>
@@ -169,7 +176,17 @@ export default class ProjectPages {
         return (
             <PopupContent
                 title="Alchemy of the Earth"
-                text={<div></div>}
+                text={<div>
+                    Alchemy of the earth is an upcoming, open world, RPG, fantasy video game about alchemy and magic. The player is placed into a beautifully diverse island which they construct using the power of alchemy and magic. The music is dreamy, ambient and epic.
+                    <br></br>
+                    <br></br>
+                    Here is a taster of some of the music:
+                    <div style={{
+                        marginTop: "1vh",
+                    }}>
+                        <iframe title="Alchemy of the Earth Soundcloud" style={{width: "100%"}} scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1305703372&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    </div>
+                </div>}
             ></PopupContent>
         );
     }
