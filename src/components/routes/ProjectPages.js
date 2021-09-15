@@ -69,13 +69,27 @@ export default class ProjectPages {
             <PopupContent
                 title="CoComelon"
                 text={<div>
-                    I have been a composer for the exciting and vibrant children's show ‘CoComelon’. I have been on board the composing team since January 2021 and hope to spend much more time involved. I am currently involved in the creation of their songs for their YouTube channel and the upcoming netflix series ‘CoComelon Lane’. I am also a composer on a new project called ‘Cocomelon Storytime’ which I hope to be able to disclose more information about in the coming months.
-                    <br></br>
-                    <br></br>
-                    You can find CoComelon’s YouTube channel here: <a href="https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ" target="_blank" rel="noreferrer noopener">https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ</a>
-                </div>}
+                        I have been a composer for the exciting and vibrant children's show ‘CoComelon’. I have been on board the composing team since January 2021 and hope to spend much more time involved. I am currently involved in the creation of their songs for their Core Production content which is for their YouTube channel. I am also a composer on a new project called ‘Cocomelon Storytime’ which I hope to be able to disclose more information about in the coming months.
+                        <br></br>
+                        <br></br>
+                        You can find CoComelon’s YouTube channel here: <a href="https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ">https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ</a>
+                        <br></br>
+                        <br></br>
+                        Here is a playlist of some of the CoComelon Songs I've written for their channel: <a href="https://www.youtube.com/playlist?list=PLBmHf_yrPS1KjpdYHtKC5Xvbit4qtXILF">https://www.youtube.com/playlist?list=PLBmHf_yrPS1KjpdYHtKC5Xvbit4qtXILF</a>
+                    </div>}
             ></PopupContent>
         );
+    }
+
+    static CocomelonNetflix = function() {
+        return (
+            <PopupContent
+                title="CoComelon Lane"
+                text={<div>
+                    I have been working on a great new kids show for Netflix called "CoComelon Lane". It's a sequel to the original CoComelon series on Netflix which can be found here: <a href="https://www.netflix.com/title/81273085">https://www.netflix.com/title/81273085</a> . The new series is due to be released around 2022-2023
+                    </div>}
+            ></PopupContent>
+        )
     }
 
     static Adapt = function() {
@@ -90,6 +104,9 @@ export default class ProjectPages {
                     <br></br>
                     <br></br>
                     You can find an example of my work on adapt here: <a href="https://youtu.be/MnFdXfAAoDU" target="_blank" rel="noreferrer noopener">https://youtu.be/MnFdXfAAoDU</a>
+                    <br></br>
+                    <br></br>
+                    Steam Link: <a href="https://store.steampowered.com/app/888780/Adapt/">https://store.steampowered.com/app/888780/Adapt/</a>
                 </div>}
                 vids={["https://www.youtube.com/embed/MnFdXfAAoDU"]}
             ></PopupContent>

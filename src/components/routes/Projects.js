@@ -1,15 +1,20 @@
 import Page from './Page';
 import './Projects.css';
 
+
+// Images
 import AdaptPic from '../../assets/project-photos/Adapt_Logo.png';
 import AOTE from '../../assets/project-photos/AOTE_Cover.png';
 import Cocomelon from '../../assets/project-photos/cocomelon.png';
+import CocomelonNetflix from '../../assets/project-photos/netflix_cocomelon.jpeg'
 import Drain from '../../assets/project-photos/drain.png';
 import InnerSpirits from '../../assets/project-photos/inner_spirits.jpg';
 import PastByJune from '../../assets/project-photos/past_by_june.jpg';
 import ScoreRelief from '../../assets/project-photos/Score_Relief.jpeg';
 import Summer from '../../assets/project-photos/summer.png';
 import SymphonyNo1 from '../../assets/project-photos/Symphony_No1.jpg';
+
+
 import ProjectPopup from './ProjectPopup';
 import { useState } from 'react';
 import ProjectPages from './ProjectPages';
@@ -38,6 +43,7 @@ function ProjectGrid(props) {
     const popupSymphonyNo1 = () => {return togglePopup(ProjectPages.SymphonyNo1())}
     const popupInnerSpirits = () => {return togglePopup(ProjectPages.InnerSpirits())}
     const popupCocomelon = () => {return togglePopup(ProjectPages.Cocomelon())}
+    const popupCocomelonNetflix = () => {return togglePopup(ProjectPages.CocomelonNetflix())}
     const popupAdapt = () => {return togglePopup(ProjectPages.Adapt())}
     const popupCirclingTheDrain = () => {return togglePopup(ProjectPages.CirclingTheDrain())}
     const popupSummerHeat = () => {return togglePopup(ProjectPages.SummerHeat())}
@@ -47,10 +53,11 @@ function ProjectGrid(props) {
 
     return (
         <div className="project-pics">
-            <Project img={SymphonyNo1} name="SymphonyNo1" title="Symphony No. 1" subtitle="Concert Music" role="Composer" togglePopup={popupSymphonyNo1}/>
-            <Project img={Cocomelon} name="Cocomelon" title="Cocomelon" subtitle="Netflix & YouTube Children's Show" role="Composer & Songwriter" togglePopup={popupCocomelon}/>
-            <Project img={InnerSpirits} name="InnerSpirits" title={<span>Inner Spirits<br></br>for String Quartet</span>} subtitle="Concert Music" role="Composer" togglePopup={popupInnerSpirits}/>
             <Project img={AdaptPic} name="AdaptPic" title="Adapt" subtitle="Video Game" role="Composer" togglePopup={popupAdapt}/>
+            <Project img={CocomelonNetflix} name="CocomelonNetflix" title= {<span>CoComelon<br></br>Lane</span>} subtitle="Netflix Children's Show" role="Composer & Songwriter" togglePopup={popupCocomelonNetflix}/>
+            <Project img={SymphonyNo1} name="SymphonyNo1" title="Symphony No. 1" subtitle="Concert Music" role="Composer" togglePopup={popupSymphonyNo1}/>
+            <Project img={Cocomelon} name="Cocomelon" title="CoComelon" subtitle="YouTube Children's Show" role="Composer & Songwriter" togglePopup={popupCocomelon}/>
+            <Project img={InnerSpirits} name="InnerSpirits" title={<span>Inner Spirits<br></br>for String Quartet</span>} subtitle="Concert Music" role="Composer" togglePopup={popupInnerSpirits}/>
             <Project img={Drain} name="Drain" title={<span>Circling <br></br>The Drain</span>} subtitle="Film" role="Composer" togglePopup={popupCirclingTheDrain}/>
             <Project img={Summer} name="Summer" title={<span>Summer <br></br> Heat</span>} subtitle="Film" role="Composer" togglePopup={popupSummerHeat}/>
             <Project img={AOTE} name="AOTE" title={<span>Alchemy<br></br>of the Earth</span>} subtitle="Video Game" role="Composer" togglePopup={popupAlchemyEarth}/>
