@@ -207,5 +207,41 @@ export default class ProjectPages {
             ></PopupContent>
         );
     }
+
+    static CocomelonStorytime = function() {
+        return (
+            <PopupContent
+                title="Cocomelon Storytime"
+                text={<div>
+                    Between June 2021 and January 2022 I worked as a composer for Moonbug Entertainment and Spotify’s new production called ‘Cocomelon Storytime’, an amazing new podcast for children with each episode consisting of a beautifully well told story from varying different places around the world. I was on a team with 3 other composers and between us we scored over 40 episodes of this season.
+                    <br></br>
+                    <br></br>
+                    The great thing about this was that each composer had something unique to offer and since each episode was from somewhere different around the world we could all play to our strengths, for example Mikey Johnson being an expert in african music, and myself leaning toward more traditional western music as well as eastern european and asian music too! Check out the trailer below.
+                    <br></br>
+                    <br></br>
+                    You can find the Cocomelon Storytime Spotify page here: https://open.spotify.com/show/6GP2OFWwUqSvVq2J0rO7wp
+                </div>}
+                vids={["https://www.youtube.com/embed/v3We83Y8kn0"]}
+            ></PopupContent>
+        );
+    }
+
+    static Stages = function() {
+        return (
+            <PopupContent
+                title="Stages"
+                text={<div>
+                    Stages is my new album with the Dad Village Symphony Orchestra. Together we produced this exciting new compilation of my latest concert compositions, mainly thanks to the incredible talents of my good friend Jordan M Holloway, the director of the orchestra and a brilliant composer in his own right. The album includes 3 pieces, my first symphony, a string impromptu called ‘Flora and Ferro’ as well as my single movement wind quintet ‘Ashton Odyssey’.
+                    <br></br>
+                    <br></br>
+                    You can find the full performance on YouTube below.
+                    <br></br>
+                    <br></br>
+                    Special thanks to Andrea Koen for producing the beautiful artwork to accompany the music.
+                </div>}
+                vids={["https://www.youtube.com/embed/O2wlGmFdmYs"]}
+            ></PopupContent>
+        );
+    }
 }
 

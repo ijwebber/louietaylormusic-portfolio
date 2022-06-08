@@ -53,6 +53,22 @@ class MyCarousel extends Component {
                                     text="“Louie is talented, flexible, and clearly loves his work. He is a real joy to collaborate with.”" 
                                     author="- Paul Herve, Founder: Rocket Ship Studios | 2020">
                         </Testimonial>
+
+                        <Testimonial 
+                                    text="“The music Louie Taylor creates for our shows is outrageously good. 
+                                    We love how he delivers to such a high standard across so many different musical genres. 
+                                    I'm still humming his theme tunes now. 
+                                    We also really appreciate Louie's swift and professional turnaround of audio materials 
+                                    and his keen ability to discuss a project from outset to final edit. It's a real joy working with him.”" 
+                                    author="- Neil Mossey, Producer, CoComelon Storytime Spotify Podcast | 2022">
+                        </Testimonial>
+
+                        <Testimonial 
+                                    text="“Louie is a collaborative, creative composer and a joy to work with.  
+                                    He responds well to feedback and is always keen to develop and 
+                                    evolve his music so it’s perfectly tailored for each production.”" 
+                                    author="- Geoff Coward, Director, Coding with QMO and BBC | 2022">
+                        </Testimonial>
                     </Carousel>
                 </div></div>
 
