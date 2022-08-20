@@ -12,8 +12,6 @@ function PopupContent(props) {
         >           
         </iframe>
     ) : null;
-    
-    console.log(props.vids)
 
     return (
         <div className="popup-content">
@@ -34,16 +32,26 @@ export default class ProjectPages {
         return (
             <PopupContent
                 title="Symphony No. 1"
-                text={<div>My first symphony was composed between 2020 and 2021, being completed in May. It was a huge achievement for me as my first major work and I’m very proud of how this turned out and that it received a first class mark as my final year project for my university degree. 
+                text={<div>
+                My first symphony was composed between 2020 and 2021, being completed in May. It was a huge achievement for me as my first major work and I’m very proud of how this turned out and that it received a first class mark as my final year project for my university degree.     
                 <br></br>
                 <br></br>
                 This symphony has been both an expression of my artistic identity and an exercise in abstract music. I was strongly inclined to write a some-what programmatic piece of music. Something that would depict a series of events in my life that meant a great deal to me and had a huge impact. However, after consideration and guidance, I realised that to truly express myself and transcend past a literal depiction of my experiences, abstraction should be my focus. It has been a great challenge to prioritise the music over my own ego, but in doing so I feel I have become more mindful as a person and more focused on the art itself rather than expressing my own feelings as they are. Which, as a result, has concluded in the same way I originally intended with a programmatic depiction: to write honest music which accurately expresses my emotions and experiences. 
                 <br></br>
                 <br></br>
-                You can find a demo of my Symphony on my soundcloud here: <a href="https://soundcloud.com/louiejtaylor/sets/symphony-no-1-demo" target="_blank" rel="noreferrer noopener">https://soundcloud.com/louiejtaylor/sets/symphony-no-1-demo</a>
+                The amazing Dad Village Symphony Orchestra produced a wonderful virtual performance of my symphony which you can find here: 
+                <iframe 
+                    title="Symphony No.1 Spotify"
+                    style={{
+                        width: "100%",
+                        padding: "0 20%",
+                        marginTop: "1vh",
+                    }}
+                            src="https://open.spotify.com/embed/album/1ea99yUudrKMfzuPDC6vhk" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                
                 <br></br>
                 <br></br>
-                And if you wish to see the full score please contact me for more information. Also, if you’re interested in performing my work, then please contact me too and we can arrange for the parts and score to be shared.
+                And if you wish to see the full score please contact me for more information. Also, if you’re interested in performing my work, then please contact me too and we can arrange for the parts and score to be shared. 
                 </div>}
             ></PopupContent>
         );
@@ -84,7 +92,7 @@ export default class ProjectPages {
     static CocomelonNetflix = function() {
         return (
             <PopupContent
-                title="CoComelon Lane"
+                title="CoComelon Netflix Compilations"
                 text={<div>
                     I have been working on a great new kids show for Netflix called "CoComelon Lane". It's a sequel to the original CoComelon series on Netflix which can be found here: <a href="https://www.netflix.com/title/81273085">https://www.netflix.com/title/81273085</a> . The new series is due to be released around 2022-2023
                     </div>}
@@ -97,18 +105,15 @@ export default class ProjectPages {
             <PopupContent
                 title="Adapt"
                 text={<div>
-                    Adapt is a really fun and exciting new video game that is currently under development by Paul Herve. Paul invited me on his team as the game’s composer back in May 2020. Since then we have been working hard to create a unique and interactive soundtrack. We’ve tried to utilise FMOD to create adaptive music that changes along with your environment and game state. 
+                    Adapt is a really fun and exciting new video game that is currently under development by Paul Herve. Paul invited me on his team as the game’s composer back in May 2020. Since then we have been working hard to create a unique and interactive soundtrack. We’ve been working with FMOD to create adaptive music that changes along with your environment and game state. 
                     <br></br>
                     <br></br>
-                    The game is set to release in mid-2022 and is being published on Steam by Slug Disco.
+                    The game is set to release in 2023 and is being published on Steam by Slug Disco.
                     <br></br>
                     <br></br>
-                    You can find an example of my work on adapt here: <a href="https://youtu.be/MnFdXfAAoDU" target="_blank" rel="noreferrer noopener">https://youtu.be/MnFdXfAAoDU</a>
-                    <br></br>
-                    <br></br>
-                    Steam Link: <a href="https://store.steampowered.com/app/888780/Adapt/">https://store.steampowered.com/app/888780/Adapt/</a>
+                    You can watch the trailer here.
                 </div>}
-                vids={["https://www.youtube.com/embed/MnFdXfAAoDU"]}
+                vids={["https://www.youtube.com/embed/H-qXKSp_zJY"]}
             ></PopupContent>
         );
     }
@@ -237,9 +242,51 @@ export default class ProjectPages {
                     You can find the full performance on YouTube below.
                     <br></br>
                     <br></br>
+                    And the digital album can be found on all major streaming platforms.
+                    <br></br>
+                    <br></br>
                     Special thanks to Andrea Koen for producing the beautiful artwork to accompany the music.
                 </div>}
                 vids={["https://www.youtube.com/embed/O2wlGmFdmYs"]}
+            ></PopupContent>
+        );
+    }
+
+    static CocomelonAlbum = function() {
+        return (
+            <PopupContent
+                title="CoComelon Albums"
+                text={<div>
+                    CoComelon albums are being released regularly on all major streaming platforms. I was brought on as composer and producer in June 2022 to help with the production of some fantastic new albums coming soon!
+                    <div style={{
+                        marginTop: "1vh",
+                    }}>
+                        <iframe 
+                    title="Circling the Drain Spotify"
+                    style={{
+                        width: "100%",
+                        padding: "0 20%",
+                        marginTop: "1vh",
+                    }}
+                    src="https://open.spotify.com/embed/artist/6SXTTUJxIVwMbc1POrviTr" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                </div>}
+            ></PopupContent>
+        );
+    }
+
+    static CodingQMO = function() {
+        return (
+            <PopupContent
+                title="Coding with QMO"
+                text={<div>
+                    This fantastic kid’s show for YouTube directed by BBC director Geoff Coward is all about learning to code. It helps children learn new techniques and terms for coding in a simple yet informative manner, with a great comedic twist too! The music for this was incredibly varied and comprised all sorts of genres: epic, orchestral, electronic and jazz to name a few, which made it so much fun to work on!
+                    <br></br>
+                    <br></br>
+                    You can check out the the Coding with QMO YouTube channel here: 
+                    <br></br>
+                    <a href="https://www.youtube.com/playlist?list=PLETGO5vu82Zgq_p3Dzo-BHecChnocObq5" target="_blank" rel="noreferrer noopener">https://www.youtube.com/playlist?list=PLETGO5vu82Zgq_p3Dzo-BHecChnocObq5</a>
+                </div>}
             ></PopupContent>
         );
     }

@@ -15,6 +15,8 @@ import Summer from '../../assets/project-photos/summer.png';
 import SymphonyNo1 from '../../assets/project-photos/Symphony_No1.jpg';
 import CocoStoryPic from '../../assets/project-photos/CCMStory.jpeg';
 import StagesPic from '../../assets/project-photos/Stages.png';
+import imgCocomelonAlbums from '../../assets/project-photos/cocomelon_albums.jpeg';
+import imgCodingQMO from '../../assets/project-photos/CodingQMO.jpeg';
 
 
 import ProjectPopup from './ProjectPopup';
@@ -54,12 +56,17 @@ function ProjectGrid(props) {
     const popupAlchemyEarth = () => {return togglePopup(ProjectPages.AlchemyEarth())}
     const popupCocomelonStorytime = () => {return togglePopup(ProjectPages.CocomelonStorytime())}
     const popupStages = () => {return togglePopup(ProjectPages.Stages())}
+    const popupCocomelonAlbum = () => {return togglePopup(ProjectPages.CocomelonAlbum())}
+    const popupCodingQMO = () => {return togglePopup(ProjectPages.CodingQMO())}
 
     return (
         <div className="project-pics">
+
+            <Project img={imgCocomelonAlbums} name="CocomelonAlbums" title={<span>CoComelon<br></br>Albums</span>} subtitle={<span>Children’s Music</span>} role="Composer" togglePopup={popupCocomelonAlbum}></Project>
+            <Project img={imgCodingQMO} name="CodingQMO" title={<span>Coding with QMO</span>} subtitle={<span>Children’s Show</span>} role={"Composer"} togglePopup={popupCodingQMO}></Project>
             <Project img={CocoStoryPic} name="CocomelonStorytime" title={<span>CoComelon<br></br>Storytime</span>} subtitle={<span>Narrated Children’s<br></br>Stories Podcast</span>} role="Composer" togglePopup={popupCocomelonStorytime}/>
             <Project img={AdaptPic} name="AdaptPic" title="Adapt" subtitle="Video Game" role="Composer" togglePopup={popupAdapt}/>
-            <Project img={CocomelonNetflix} name="CocomelonNetflix" title= {<span>CoComelon<br></br>Lane</span>} subtitle="Netflix Children's Show" role="Composer & Songwriter" togglePopup={popupCocomelonNetflix}/>
+            <Project img={CocomelonNetflix} name="CocomelonNetflix" title= {<span>CoComelon<br></br>Netflix<br></br>Compilations</span>} subtitle="Netflix Children's Show" role="Composer & Songwriter" togglePopup={popupCocomelonNetflix}/>
             <Project img={SymphonyNo1} name="SymphonyNo1" title="Symphony No. 1" subtitle="Concert Music" role="Composer" togglePopup={popupSymphonyNo1}/>
             <Project img={StagesPic} name="Stages" title="Stages" subtitle={<span>Virtual Performance of<br></br>Classical Concert Works</span>} role="Composer" togglePopup={popupStages}/>    
             <Project img={Cocomelon} name="Cocomelon" title="CoComelon" subtitle="YouTube Children's Show" role="Composer & Songwriter" togglePopup={popupCocomelon}/>
