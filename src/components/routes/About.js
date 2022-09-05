@@ -2,8 +2,8 @@ import Page from './Page';
 import './About.css';
 
 // Images
-import About1 from '../../assets/about1.jpg';
-import About2 from '../../assets/about2.jpg';
+//import About1 from '../../assets/about1.jpg';
+//import About2 from '../../assets/about2.jpg';
 import imgAbout from '../../assets/about.jpg';
 
 export default function About(props) {

@@ -29,6 +29,11 @@ function Soundcloud() {
             <div className="element">
                 <iframe title="electronic" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1099853356&color=%23ff6c00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" />
             </div>
+
+            <div className="element">
+                <iframe title="electronic" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1400500069&color=%23ff6c00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" />
+            </div>
+
         </div>
     );
 }

@@ -72,7 +72,7 @@ export default class Home extends Component {
     render() {
         return (
             <Page position={this.props.position} >
-                <div className="Home" style={{ marginTop: "232px" }}>
+                <div className="Home" style={{ marginTop: "160px" }}>
                     <img src={notes} className="music-notes" alt="musical-notes" style={{ opacity: this.calcOpacity() }} />
                     <div className="title">
                         <img src={logo} className="logo" alt="logo" />
