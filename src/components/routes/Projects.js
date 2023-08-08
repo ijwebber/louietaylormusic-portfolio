@@ -8,11 +8,11 @@ import AOTE from '../../assets/project-photos/AOTE_Cover.png';
 import Cocomelon from '../../assets/project-photos/cocomelon.png';
 import CocomelonNetflix from '../../assets/project-photos/netflix_cocomelon.jpeg'
 import Drain from '../../assets/project-photos/drain.png';
-import InnerSpirits from '../../assets/project-photos/inner_spirits.jpg';
+import InnerSpirits from '../../assets/project-photos/inner_spirits.png';
 import PastByJune from '../../assets/project-photos/past_by_june.jpg';
 import ScoreRelief from '../../assets/project-photos/Score_Relief.jpeg';
 import Summer from '../../assets/project-photos/summer.png';
-import SymphonyNo1 from '../../assets/project-photos/Symphony_No1.jpg';
+import SymphonyNo1 from '../../assets/project-photos/Symphony_No1.png';
 import CocoStoryPic from '../../assets/project-photos/CCMStory.jpeg';
 import StagesPic from '../../assets/project-photos/Stages.png';
 import imgCocomelonAlbums from '../../assets/project-photos/cocomelon_albums.jpeg';
@@ -61,7 +61,6 @@ function ProjectGrid(props) {
 
     return (
         <div className="project-pics">
-
             <Project img={imgCocomelonAlbums} name="CocomelonAlbums" title={<span>CoComelon<br></br>Albums</span>} subtitle={<span>Children’s Music</span>} role="Composer" togglePopup={popupCocomelonAlbum}></Project>
             <Project img={imgCodingQMO} name="CodingQMO" title={<span>Coding with QMO</span>} subtitle={<span>Children’s Show</span>} role={"Composer"} togglePopup={popupCodingQMO}></Project>
             <Project img={CocoStoryPic} name="CocomelonStorytime" title={<span>CoComelon<br></br>Storytime</span>} subtitle={<span>Narrated Children’s<br></br>Stories Podcast</span>} role="Composer" togglePopup={popupCocomelonStorytime}/>
@@ -70,7 +69,7 @@ function ProjectGrid(props) {
             <Project img={SymphonyNo1} name="SymphonyNo1" title="Symphony No. 1" subtitle="Concert Music" role="Composer" togglePopup={popupSymphonyNo1}/>
             <Project img={StagesPic} name="Stages" title="Stages" subtitle={<span>Virtual Performance of<br></br>Classical Concert Works</span>} role="Composer" togglePopup={popupStages}/>    
             <Project img={Cocomelon} name="Cocomelon" title="CoComelon" subtitle="YouTube Children's Show" role="Composer & Songwriter" togglePopup={popupCocomelon}/>
-            <Project img={InnerSpirits} name="InnerSpirits" title={<span>Inner Spirits<br></br>for String Quartet</span>} subtitle="Concert Music" role="Composer" togglePopup={popupInnerSpirits}/>
+            <Project img={InnerSpirits} name="InnerSpirits" title={<span>Inner Spirits<br></br>for<br/>String Quartet</span>} subtitle="Concert Music" role="Composer" togglePopup={popupInnerSpirits}/>
             <Project img={Drain} name="Drain" title={<span>Circling <br></br>The Drain</span>} subtitle="Film" role="Composer" togglePopup={popupCirclingTheDrain}/>
             <Project img={Summer} name="Summer" title={<span>Summer <br></br> Heat</span>} subtitle="Film" role="Composer" togglePopup={popupSummerHeat}/>
             <Project img={AOTE} name="AOTE" title={<span>Alchemy<br></br>of the Earth</span>} subtitle="Video Game" role="Composer" togglePopup={popupAlchemyEarth}/>
